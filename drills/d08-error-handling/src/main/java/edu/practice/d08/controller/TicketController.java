@@ -38,4 +38,6 @@ public class TicketController {
     public ResponseEntity<Ticket> add(@RequestBody NewTicket body) {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.add(body));
     }
+
+
 }
